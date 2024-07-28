@@ -1,0 +1,144 @@
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.calendar {
+  display: inline-block;
+  text-align: left;
+  box-shadow: 0 0 10px 3px rgba(196, 196, 196, 0.5); /* Shadow highlight */
+  padding: 10px; /* Some pargba(88, 88, 88, 0.5)nce */
+  margin: 20px; /* Some margin for spacing */
+
+  div {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+}
+
+.titleSection {
+  width: 150px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.titleSection:hover,
+title:active {
+  background-color: #b4b4b4;
+}
+
+.contentCalendayDays {
+  width: 350px;
+  height: 333px;
+  justify-content: center;
+}
+
+.contentCalendarMonthYear {
+  width: 350px;
+  height: 333px;
+  justify-content: center;
+  display: flex;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+  width: 350px;
+}
+
+.months {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-weight: bold;
+  width: 350px;
+}
+
+.dayPevMonth,
+.dayNextMonth {
+  color: #b4b4b4;
+}
+
+.currentDay {
+  color: #db3d44;
+}
+
+.weekDay,
+.dayCurrentMonth,
+.dayPevMonth,
+.dayNextMonth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+}
+
+.currentMonth,
+.currentYear {
+  height: 60px;
+  width: 60px;
+  background-color: #db3d44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.currentSelectedDay {
+  background-color: #db3d44;
+  color: #fff;
+  width: 24px;
+  border-radius: 10px;
+  height: 24px;
+  justify-content: center;
+  display: flex;
+}
+
+.sectionYear {
+  color: #b4b4b4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+}
+
+.dayCurrentMonth:hover,
+.dayPrevMonth:hover,
+.dayNextMonth:hover {
+  background-color: lightgray; /* Color when hovered */
+}
+
+.dayCurrentMonth:active,
+.dayPrevMonth:active,
+.dayNextMonth:active {
+  background-color: #db3d44;
+}
+
+.daysGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  width: 350px;
+  cursor: pointer;
+}

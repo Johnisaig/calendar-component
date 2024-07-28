@@ -1,0 +1,4 @@
+@function pxToRem($px) {
+  $htmlFontSize: 16px; // Base font size
+  @return #{$px / $htmlFontSize}re;
+}
